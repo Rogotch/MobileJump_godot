@@ -13,6 +13,14 @@ config_version=4
 config/name="MobileJump"
 config/icon="res://icon.png"
 
+[autoload]
+
+MoveSystem="*res://Scripts/Global/MoveSystem.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/ch.fischspiele.tilesethelper/plugin.cfg" )
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
