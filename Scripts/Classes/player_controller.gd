@@ -14,13 +14,13 @@ func _unhandled_input(event):
 	
 	var final_direction = Vector2.ZERO
 	
-	if event.is_action_released("move_left"):
+	if event.is_action_pressed("move_left"):
 		final_direction += Vector2.LEFT
-	if event.is_action_released("move_right"):
+	if event.is_action_pressed("move_right"):
 		final_direction += Vector2.RIGHT
-	if event.is_action_released("move_up"):
+	if event.is_action_pressed("move_up"):
 		final_direction += Vector2.UP
-	if event.is_action_released("move_down"):
+	if event.is_action_pressed("move_down"):
 		final_direction += Vector2.DOWN
 	
 	if final_direction.abs().length() > 0:
